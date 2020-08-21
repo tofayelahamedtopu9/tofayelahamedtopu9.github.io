@@ -1,0 +1,502 @@
+@import 'https://fonts.googleapis.com/css?family=Montserrat:300, 400, 700&display=swap';
+
+
+html, body{
+    margin: 0%;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    background:#000f1a;
+    font-family: 'Montserrat', sans-serif;
+    
+   
+}
+/* ---------------- Global Classes ---------------*/
+
+a{
+    text-decoration: none;
+    color:whitesmoke;
+    font-size: 18px;
+}
+#google_translate_element span{
+    color:black;
+    font-family: 'Montserrat', sans-serif;
+}
+.flex-row{
+    display: flex;
+    flex-direction: row;    
+    flex-wrap: wrap;
+}
+
+ul{
+    list-style-type: none;
+}
+
+h1{
+    
+    font-size: 2.5rem;
+    color: whitesmoke;
+}
+
+h2{
+    
+    color:whitesmoke;
+}
+
+h3{
+   color: black;
+    font-size: 1.3rem;
+}
+
+button.btn{
+    border: none;
+    border-radius: 2rem;
+    padding: 1rem 3rem;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+span{
+    padding: 2px;
+    color: whitesmoke;
+    font-size: 2rem;
+    
+    
+}
+
+.container{
+    margin: 0 5vw;
+}
+
+.text-gray{
+    color:whitesmoke;
+    font-size: 26px;
+}
+
+p{
+    color:whitesmoke;
+    font-size: 2rem;
+}
+
+/* ------x------- Global Classes -------x-------*/
+
+/* --------------- navbar ----------------- */
+
+.nav{
+    background:#000f1a;
+    padding: 0 2rem;
+    height: 0rem;
+    min-height: 8vh;
+    overflow: hidden;
+    transition: height 1s ease-in-out;
+}
+
+.nav .nav-menu{    
+    justify-content: space-between;
+}
+
+.nav .toggle-collapse{
+    position: absolute;
+    top: 0%;
+    width: 90%;
+    cursor: pointer;
+    display: none;
+}
+
+.nav .toggle-collapse .toggle-icons{
+    display: flex;
+    justify-content: flex-end;
+    padding: 1.7rem 0;
+}
+
+.nav .toggle-collapse .toggle-icons i{
+    font-size: 1.4rem;
+    color: whitesmoke;
+}
+
+.collapse{
+    height: 20rem;
+    background:#000f1a;
+}
+
+.nav .nav-items{
+    display: flex;
+    margin: 0;
+}
+
+.nav .nav-items .nav-link{
+    padding: .8rem .8rem;
+    
+    position: relative;
+    
+}
+
+
+
+.nav .nav-items .nav-link:hover a{
+    color:rgb(30, 196, 8);
+}
+
+
+.nav .nav-brand a{
+   
+    display: block;
+    padding: .8rem .8rem;
+    margin-bottom: 10px;
+   
+}
+
+
+
+/* -------x------- navbar ---------x------- */
+
+
+/* ----------------- Main Content----------- */
+
+/* --------------- Site title ---------------- */
+main .site-title{
+    background: url('../img/cover8.PNG');
+    background-size:contain;
+    height: 75vh;
+    display: flex;
+    justify-content: center;
+}
+
+main .site-title .site-background{
+    padding-top: 4rem;
+    text-align: center;
+    color: whitesmoke;
+}
+
+main .site-title  h2{
+    margin: .3rem;
+    color: black;
+    background-color: yellow;
+   
+}
+
+
+/* --------x------ Site title --------x------- */
+
+/* --------------- Blog Carousel ------------ */
+
+main .blog{
+    background:#000f1a;
+    background-repeat: no-repeat;
+    background-position: right;
+    height: 620px;
+    width: 100%;
+    
+}
+
+main .blog .blog-post{
+    padding-top: 4rem;
+   
+}
+
+main .blog-post .blog-content{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 80%;
+    background: #0E6655;
+    margin: 2rem 2rem;
+    border-radius: 2px;
+}
+
+main .blog-content .blog-title{
+    margin-bottom: 1.4rem;
+}
+main .blog-content .blog-title h3{
+    color:whitesmoke;
+   
+}
+
+
+main .blog-content span{
+    display: block;
+    text-align: center;
+    color:yellow;
+    font-size: 20px;
+}
+
+/* -------x------- Blog Carousel -----x------ */
+
+/* ---------------- Site Content ----------------*/
+
+main .site-content{
+    display: grid;
+    grid-template-columns: 70% 30%;
+   
+}
+
+main .post-content{
+    width: 100%;
+    
+}
+
+main .site-content .post-content > .post-video, .post-title{
+    padding: 1rem 2rem;
+    position: relative;
+}
+main .site-content .post-content > .post-video .post-info{
+   
+    background:#0E6655;
+    padding: .5rem;
+    position: absolute;
+    bottom: -5%;
+    left: 22vw;
+    border-radius: 3rem;
+}
+
+
+
+
+
+main .site-content .post-content > .post-video .post-info span{
+    
+    margin: 0 .5rem;
+}
+
+main .post-content .post-title a{
+    
+    font-size: 1.5rem;
+}
+
+#more{
+    display: none;
+}
+
+#more2{
+    display: none;
+}
+#more3{
+    display: none;
+}
+#more4{
+    display: none;
+}
+main .post-content .post-title p,span{
+    text-align: justify;
+    font-size: 1rem;
+}
+.site-content .post-content .post-title .post-btn{
+   color: whitesmoke;
+    border-radius: 3px;
+    padding: .7rem 1.5rem;
+    background:#0E6655;
+}
+
+.site-content .pagination{
+    justify-content: center;
+    color: var(--text-gray);
+    margin: 4rem 0;
+}
+
+.site-content .pagination a{
+    padding: .6rem .9rem;
+    border-radius: 2rem;
+    margin: 0 .3rem;
+    
+}
+
+.site-content .pagination .pages{
+    background: var(--text-gray);
+    color: var(--white);
+}
+
+/* -------x-------- Site Content --------x-------*/
+
+
+/* --------------- Sidebar ----------------------- */
+
+.site-content > .sidebar .category h2{
+    margin-left: 4rem; 
+}
+
+
+.site-content > .sidebar .category-list .list-items{
+    
+    background:#0E6655;
+    padding: .3rem 1rem;
+    margin: .8rem 0;
+    border-radius: 3rem;
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.site-content > .sidebar .category-list .list-items a{
+    color:  whitesmoke;
+    font-size: 1.2rem;
+}
+.site-content > .sidebar .category-list .list-items p{
+    color:  whitesmoke;
+    font-size: 1.2rem;
+}
+
+.site-content .sidebar .popular-post .post-content{
+    padding: .3rem 0;
+    border-radius: .3rem;
+}
+.site-content .sidebar .popular-post .post-content .post-info{
+
+    background:#0E6655;
+    border-radius: .3rem;
+}
+
+.site-content .sidebar .popular-post h2{
+    padding-top: 2rem;
+    margin-left: 4rem;
+
+}
+.site-content .sidebar .popular-post .post-image{
+    padding: 0rem;
+    
+}
+.site-content .sidebar .popular-post .post-title p{
+   
+    font-size: 1.1rem;
+}
+
+.site-content .sidebar .popular-tags{
+    padding: 1rem 0;
+}
+.site-content .sidebar .popular-tags h2{
+    margin-left:5rem ;
+}
+
+.site-content .sidebar .popular-tags .tags .tag{
+    background:#0E6655;
+    padding: .4rem 1rem;
+    border-radius: 3rem;
+    margin: .3rem .6rem;
+}
+
+
+/* -------x------- Sidebar -----------x----------- */
+
+/* ---------x------- Main Content -----x----- */
+
+
+/* ----------------- Footer --------------------- */
+
+footer.footer{
+    height: 30%;
+    background: black;
+    position: relative;
+}
+
+
+
+
+
+footer.footer .rights{
+    justify-content: center;
+    
+}
+
+footer.footer .rights h4{
+    color:whitesmoke;
+}
+
+footer.footer .move-up{
+    position: absolute;
+    right: 6%;
+    top: 30%;
+}
+footer.footer .move-up span{
+    color:whitesmoke ;
+}
+footer.footer .move-up span:hover{
+    color: #0E6655;
+    cursor: pointer;
+}
+/* ---------x------- Footer ----------x---------- */
+
+/*              Viewport less then or equal to 1130px            */
+
+@media only screen and (max-width: 1130px){
+    .site-content .post-content > .post-image .post-info{
+        left: 2rem !important;
+        bottom: 1.2rem !important;
+        border-radius: 0% !important;
+    }
+
+    .site-content .sidebar .popular-post .post-info{
+        display: none !important;
+    }
+
+    footer.footer .container{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+/*      x       Viewport less then or equal to 1120px    x    */
+
+
+
+@media only screen and (max-width:1120px){
+    .nav .nav-menu, .nav .nav-items{
+        flex-direction: column;
+    }
+
+    .nav .toggle-collapse{
+        display: initial;
+    }
+
+    main .site-content{
+        grid-template-columns: 100%;
+    }
+
+    footer.footer .container{
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+}
+
+/*              Viewport less then or equal to 750px            */
+
+@media only screen and (max-width:750px){
+    .nav .nav-menu, .nav .nav-items{
+        flex-direction: column;
+    }
+
+    .nav .toggle-collapse{
+        display: initial;
+    }
+
+    main .site-content{
+        grid-template-columns: 100%;
+    }
+
+    footer.footer .container{
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+}
+/*              Viewport less then or equal to 520px            */
+
+@media only screen and (max-width: 520px){
+    main .blog{
+        height: 125vh;
+    }
+
+    .site-content .post-content > .post-image .post-info{
+        display: none;
+    }
+
+    footer.footer .container > div{
+        padding:  1rem .9rem !important;
+    }
+
+    footer .rights{
+        padding: 0 1.4rem;
+        text-align: center;
+    }
+
+    nav .toggle-collapse{
+        width: 80% !important;
+    }
+
+}

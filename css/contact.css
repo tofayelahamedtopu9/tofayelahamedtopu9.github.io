@@ -1,0 +1,344 @@
+@import 'https://fonts.googleapis.com/css?family=Montserrat:300, 400, 700&display=swap';
+
+
+html, body{
+    margin: 0%;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    background:#000f1a;
+    font-family: 'Montserrat', sans-serif;
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  
+}
+
+a{
+    text-decoration: none;
+    color:whitesmoke;
+    font-size: 18px;
+}
+#google_translate_element span{
+    color:black;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 18px;
+}
+.flex-row{
+    display: flex;
+    flex-direction: row;    
+    flex-wrap: wrap;
+}
+
+ul{
+    list-style-type: none;
+}
+/* ------x------- Global Classes -------x-------*/
+
+/* --------------- navbar ----------------- */
+.nav{
+    background:#000f1a;
+    padding: 0 2rem;
+    height: 0rem;
+    min-height: 8vh;
+    overflow: hidden;
+    transition: height 1s ease-in-out;
+}
+
+.nav .nav-menu{    
+    justify-content: space-between;
+}
+
+.nav .toggle-collapse{
+    position: absolute;
+    top: 0%;
+    width: 90%;
+    cursor: pointer;
+    display: none;
+}
+
+.nav .toggle-collapse .toggle-icons{
+    display: flex;
+    justify-content: flex-end;
+    padding: 1.7rem 0;
+}
+
+.nav .toggle-collapse .toggle-icons i{
+    font-size: 1.4rem;
+    color: whitesmoke;
+}
+
+.collapse{
+    height: 20rem;
+    background:#000f1a;
+}
+
+.nav .nav-items{
+    display: flex;
+    margin: 0;
+}
+
+.nav .nav-items .nav-link{
+    padding: .8rem .8rem;
+    
+    position: relative;
+    
+}
+.nav .nav-items .nav-link:hover a{
+    color:rgb(30, 196, 8);
+}
+.nav .nav-brand a{
+   
+    display: block;
+    padding: .8rem .8rem;
+    margin-bottom: 10px;
+   
+}
+.payment{
+
+  max-width: 460px;
+  margin: 80px auto;
+  height: auto;
+  padding: 35px;
+  padding-top: 70px;
+  border-radius: 5px;
+  position: relative;
+  
+}
+
+.payment h2{
+  text-align: center;
+  letter-spacing: 2px;
+  margin-bottom: 40px;
+  color:whitesmoke;
+}
+
+.form .label{
+  display: block;
+  color:whitesmoke;
+  margin-bottom: 6px;
+}
+
+.input{
+  padding: 13px 0px 13px 25px;
+  width: 100%;
+  text-align: center;
+  border: 2px solid #dddddd;
+  border-radius: 5px;
+  letter-spacing: 1px;
+  word-spacing: 3px;
+  outline: none;
+  font-size: 16px;
+  color: #555555;
+}
+
+.card-grp{
+  display: flex;
+  justify-content: space-between;
+}
+
+.card-item{
+  width: 48%;
+}
+
+.space{
+  margin-bottom: 20px;
+}
+
+.icon-relative{
+  position: relative;
+}
+
+.icon-relative .fas,
+.icon-relative .far{
+  position: absolute;
+  bottom: 12px;
+  left: 15px;
+  font-size: 20px;
+  color: #555555;
+}
+
+.btn{
+  margin-top: 40px;
+  background: #0E6655;
+  padding: 12px;
+  text-align: center;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btnn{
+ 
+  background: #0E6655;
+  padding: 5px;
+  text-align: center;
+  color: whitesmoke;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 20px;
+  border: #0E6655;
+}
+
+
+.payment-logo{
+  position: absolute;
+  top: -50px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100px;
+  height: 100px;
+  background: #f8f8f8;
+  border-radius: 50%;
+  box-shadow: 0 0 5px rgba(0,0,0,0.2);
+  text-align: center;
+  line-height: 85px;
+}
+
+.payment-logo:before{
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  width: 90px;
+  height: 90px;
+  background: #0E6655;
+  border-radius: 50%;
+}
+
+.payment-logo p{
+  position: relative;
+  color: #f8f8f8;
+  font-family: 'Baloo Bhaijaan', cursive;
+  font-size: 58px;
+}
+footer.footer{
+    height: 70px;
+    background: black;
+    position: relative;
+}
+
+
+
+
+
+footer.footer .rights{
+    justify-content: center;
+    
+}
+
+footer.footer .rights h4{
+    margin-top: 30px;
+    color:whitesmoke;
+}
+
+
+
+
+
+@media only screen and (max-width: 1130px){
+  .site-content .post-content > .post-image .post-info{
+      left: 2rem !important;
+      bottom: 1.2rem !important;
+      border-radius: 0% !important;
+  }
+
+  .site-content .sidebar .popular-post .post-info{
+      display: none !important;
+  }
+
+  footer.footer .container{
+      grid-template-columns: repeat(2, 1fr);
+  }
+
+}
+
+/*      x       Viewport less then or equal to 1130px    x     */
+
+
+/*              Viewport less then or equal to 750px            */
+@media only screen and (max-width: 1130px){
+  .site-content .post-content > .post-image .post-info{
+      left: 2rem !important;
+      bottom: 1.2rem !important;
+      border-radius: 0% !important;
+  }
+
+  .site-content .sidebar .popular-post .post-info{
+      display: none !important;
+  }
+
+  footer.footer .container{
+      grid-template-columns: repeat(2, 1fr);
+  }
+
+}
+
+/*      x       Viewport less then or equal to 1120px    x    */
+
+
+
+@media only screen and (max-width:1120px){
+  .nav .nav-menu, .nav .nav-items{
+      flex-direction: column;
+  }
+
+  .nav .toggle-collapse{
+      display: initial;
+  }
+
+  main .site-content{
+      grid-template-columns: 100%;
+  }
+
+  footer.footer .container{
+      grid-template-columns: repeat(1, 1fr);
+  }
+
+}
+
+/*              Viewport less then or equal to 750px            */
+
+@media only screen and (max-width:750px){
+  .nav .nav-menu, .nav .nav-items{
+      flex-direction: column;
+  }
+
+  .nav .toggle-collapse{
+      display: initial;
+  }
+
+  main .site-content{
+      grid-template-columns: 100%;
+  }
+
+  footer.footer .container{
+      grid-template-columns: repeat(1, 1fr);
+  }
+
+}
+/*              Viewport less then or equal to 520px            */
+
+@media only screen and (max-width: 520px){
+  main .blog{
+      height: 125vh;
+  }
+
+  .site-content .post-content > .post-image .post-info{
+      display: none;
+  }
+
+  footer.footer .container > div{
+      padding:  1rem .9rem !important;
+  }
+
+  footer .rights{
+      padding: 0 1.4rem;
+      text-align: center;
+  }
+
+  nav .toggle-collapse{
+      width: 80% !important;
+  }
+
+}

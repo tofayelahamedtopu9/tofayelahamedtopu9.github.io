@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="./css/all.css">
+  <!-- --------- Owl-Carousel ------------------->
+  <link rel="stylesheet" href="./css/owl.carousel.min.css">
+  <link rel="stylesheet" href="./css/owl.theme.default.min.css">
+  <link rel="stylesheet" href="./css/aos.css">
+  <link rel="stylesheet" href="./css/contact.css">
+  <script type="text/javascript">
+    function googleTranslateElementInit() {
+      new google.translate.TranslateElement({ pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE }, 'google_translate_element');
+    }
+  </script>
+</head>
+<body>
+  <nav class="nav">
+    <div class="nav-menu flex-row">
+      <div class="nav-brand">
+        <a href="#" class="text-gray">History of Epidemic</a>
+      </div>
+      <div class="toggle-collapse">
+        <div class="toggle-icons">
+          <i class="fas fa-bars"></i>
+        </div>
+      </div>
+      <div>
+
+        <ul class="nav-items">
+          <li class="nav-link"><a href="Index.html">Home</a></li>
+                    <li class="nav-link"><a href="https://www.who.int/emergencies/diseases/novel-coronavirus-2019/advice-for-public/when-and-how-to-use-masks">Helth Tips</a> </li>
+                    <li class="nav-link"><a href="donation.html">Donation</a></li>
+                    <li class="nav-link"><a href="contact.html">Contact Us</a> </li>
+                    <li class="nav-link"><div id="google_translate_element"></div></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</main>
+  <section>
+    <div class="blog">
+        <div class="container">
+            <div class="owl-carousel owl-theme blog-post">
+                <div class="blog-content" data-aos="fade-right" data-aos-delay="200">
+                    <img src="./img/slidercorona2.jpg" alt="post-1">
+                    <div class="blog-title">
+                        <h3>CORONA VIRUS</h3>
+                        <span>2019-Present</span>
+                    </div>
+                </div>
+                <div class="blog-content" data-aos="fade-in" data-aos-delay="200">
+                    <img src="./img/sliderzika1.jpg" alt="post-1">
+                    <div class="blog-title">
+                        <h3>ZIKA VIRUS</h3>
+                        <span>2015</span>
+                    </div>
+                </div>
+                <div class="blog-content" data-aos="fade-left" data-aos-delay="200">
+                    <img src="./img/slidebarebola1.jpg" alt="post-1">
+                    <div class="blog-title">
+                        <h3>EBOLA VIRUS</h3>
+                        <span>2014-2016</span>
+                    </div>
+                </div>
+                <div class="blog-content" data-aos="fade-right" data-aos-delay="200">
+                    <img src="./img/slidebarcholera1.jpg" alt="post-1">
+                    <div class="blog-title">
+                        <h3>CHOLERA</h3>
+                        <span>2010</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+</main>
+  <!------payment----------->
+  <form>
+    <div class="wrapper">
+      <div class="payment">
+        <div class="payment-logo">
+          <p>C</p>
+        </div>
+        <h2>Contact Us</h2>
+        <div class="form">
+          <div class="card space icon-relative">
+            <label class="label">Name</label>
+            <input type="text" class="input" id="name" name="card_holder" placeholder="Enter Name" value="" required>
+            <i class="fas fa-user"></i>
+          </div>
+          <small style="color: red;" id="nmsg"></small>
+
+          <div class="card space icon-relative">
+            <label class="label">Email:</label>
+            <input type="email" class="input" id="em" name="holder_email" placeholder="Enter Email" value="" required>
+
+            <i class="fas fa-envelope-open"></i>
+          </div>
+          <div class="card space icon-relative">
+            <label class="label">FeedBack:</label>
+              <textarea cols="25" name="address" rows="5" class="input" id="number" name="card_number" data-mask="0000 0000 0000 0000"
+              placeholder="Type Your FeedBack" value="" required></textarea>
+          </div>
+          <small style="color: red;" id="zmsg"></small>
+
+          </div>
+         
+
+          <div class="btn">
+            <button class="btnn" onclick="validateForm();">Submit</button>
+              
+          </div>
+        </div>
+      </div>
+    </div>
+  </form>
+  <footer class="footer">
+    <div class="rights flex-row">
+      <h4 >Copyright © 2020 DIU. All Rights Reserved.</h4>
+    </div>
+    
+</footer>
+
+
+
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.15/jquery.mask.min.js"></script>
+
+
+  <!-- --------- Owl-Carousel js ------------------->
+  <script src="./js/owl.carousel.min.js"></script>
+
+  <!-- ------------ AOS js Library  ------------------------- -->
+  <script src="./js/aos.js"></script>
+
+  <!-- Custom Javascript file -->
+  <script src="./js/contact.js"></script>
+
+  <!--------------------------Web Page Translate------------------------------------>
+  <script type="text/javascript"
+    src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit">
+  </script>
+
+</body>
+
+</html>

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="./css/all.css">
+  <!-- --------- Owl-Carousel ------------------->
+  <link rel="stylesheet" href="./css/owl.carousel.min.css">
+  <link rel="stylesheet" href="./css/owl.theme.default.min.css">
+  <link rel="stylesheet" href="./css/aos.css">
+  <link rel="stylesheet" href="./css/donation.css">
+  <script type="text/javascript">
+    function googleTranslateElementInit() {
+      new google.translate.TranslateElement({ pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE }, 'google_translate_element');
+    }
+  </script>
+</head>
+<body>
+  <nav class="nav">
+    <div class="nav-menu flex-row">
+      <div class="nav-brand">
+        <a href="#" class="text-gray">History of Epidemic</a>
+      </div>
+      <div class="toggle-collapse">
+        <div class="toggle-icons">
+          <i class="fas fa-bars"></i>
+        </div>
+      </div>
+      <div>
+
+        <ul class="nav-items">
+          <li class="nav-link"><a href="Index.html">Home</a></li>
+                    <li class="nav-link"><a href="https://www.who.int/emergencies/diseases/novel-coronavirus-2019/advice-for-public/when-and-how-to-use-masks">Helth Tips</a> </li>
+                    <li class="nav-link"><a href="donation.html">Donation</a></li>
+                    <li class="nav-link"><a href="contact.html">Contact Us</a> </li>
+                    <li class="nav-link"><div id="google_translate_element"></div></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!------payment----------->
+  <form action="index.php" method="POST">
+    <div class="wrapper">
+      <div class="payment">
+        <div class="payment-logo">
+          <p>D</p>
+        </div>
+        <h2>Donation Gateway</h2>
+        <div class="form">
+          <div class="card space icon-relative">
+            <label class="label">Card holder:</label>
+            <input type="text" class="input" id="name" name="card_holder" placeholder="Holder Name" value="" required>
+            <i class="fas fa-user"></i>
+          </div>
+          <small style="color: red;" id="nmsg"></small>
+
+          <div class="card space icon-relative">
+            <label class="label">Holder Email:</label>
+            <input type="email" class="input" id="em" name="holder_email" placeholder="User Email" value="" required>
+
+            <i class="fas fa-envelope-open"></i>
+          </div>
+          <div class="card space icon-relative">
+            <label class="label">Card number:</label>
+            <input type="text" class="input" id="number" name="card_number" data-mask="0000 0000 0000 0000"
+              placeholder="Card Number" value="" required>
+            <i class="far fa-credit-card"></i>
+          </div>
+          <small style="color: red;" id="zmsg"></small>
+
+          <div class="card-grp space">
+            <div class="card-item icon-relative">
+              <label class="label">Expiry date:</label>
+              <input type="text" name="expiry_date" class="input" data-mask="00 / 00" placeholder="00 / 00" value=""
+                required>
+              <i class="far fa-calendar-alt"></i>
+            </div>
+            <div class="card-item icon-relative">
+              <label class="label">CVC:</label>
+              <input type="text" class="input" name="cvc" data-mask="000" placeholder="000" value="" required>
+              <i class="fas fa-lock"></i>
+            </div>
+          </div>
+          <div class="card space icon-relative">
+            <label class="label">Amount:</label>
+            <input type="text" class="input" id="am" name="amount" placeholder="Amount" value="" required>
+
+            <i class="far fa-money-bill-alt"></i>
+          </div>
+
+          <div class="btn">
+            <button class="btnn" onclick="validateForm();">Donate Now</button>
+              
+          </div>
+        </div>
+      </div>
+    </div>
+  </form>
+  <footer class="footer">
+    <div class="rights flex-row">
+        <h4 >Copyright © 2020 DIU. All Rights Reserved.</h4>
+    </div>
+    
+</footer>
+
+
+
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.15/jquery.mask.min.js"></script>
+
+
+  <!-- --------- Owl-Carousel js ------------------->
+  <script src="./js/owl.carousel.min.js"></script>
+
+  <!-- ------------ AOS js Library  ------------------------- -->
+  <script src="./js/aos.js"></script>
+
+  <!-- Custom Javascript file -->
+  <script src="./js/donation.js"></script>
+
+  <!--------------------------Web Page Translate------------------------------------>
+  <script type="text/javascript"
+    src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+</body>
+
+</html>
